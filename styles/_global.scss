@@ -1,0 +1,15 @@
+.current {
+    border-bottom: 4px solid #ffffff;
+}
+
+body {
+    font-family: $font-regular;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 0.8125rem;
+    font-family: $font-light;
+}

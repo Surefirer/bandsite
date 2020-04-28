@@ -1,0 +1,40 @@
+.hero {
+    height: 47vh; // required height is 183px
+    background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/concert-1.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    &__text {
+        color: $secondary-color;
+        font-family: $font-bold;
+        width: 13.125rem;
+        padding-left: 1rem;
+        font-size: 0.875rem;
+        line-height: 2rem;
+    }
+}
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .hero {
+        height: 25rem; //required height is 400px
+        &__text {
+            width: 37.5rem;
+            font-size: 2.25rem;
+            font-family: $font-bold;
+            line-height: 4.25rem;
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+// ====== DESKTOP VERSION ======
+@include desktop {
+    .hero {
+        height: 41.875rem;
+        &__text {
+            width: 43.75rem;
+            padding-left: 11.25rem;
+        }
+    }
+}

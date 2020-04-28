@@ -1,0 +1,43 @@
+.sp-hero {
+    height: 90vh; // required height is 472px
+    background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/showPageImg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    &__text {
+        color: $secondary-color;
+        font-family: $font-bold;
+        width: 13.125rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    &__text--title {
+        font-family: $font-regular;
+        padding-top: 64px;
+    }
+}
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .sp-hero {
+        height: 25rem; //required height is 400px
+        &__text {
+            width: 37.5rem;
+            font-size: 2.25rem;
+            font-family: $font-bold;
+            line-height: 4.25rem;
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+// ====== DESKTOP VERSION ======
+@include desktop {
+    .sp-hero {
+        height: 41.875rem;
+        &__text {
+            width: 43.75rem;
+            padding-left: 11.25rem;
+        }
+    }
+}
