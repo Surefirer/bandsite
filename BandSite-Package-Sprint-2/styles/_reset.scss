@@ -1,0 +1,28 @@
+Html,
+body {
+    Margin: 0;
+    padding: 0;
+    Box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    Box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h5,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
