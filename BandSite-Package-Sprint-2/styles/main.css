@@ -605,14 +605,20 @@ footer {
 
 @media (min-width: 768px) {
   .sp-hero {
-    height: 25rem;
+    height: 670px;
   }
   .sp-hero__text {
-    width: 37.5rem;
-    font-size: 2.25rem;
+    width: 600px;
+    font-size: 2.5rem;
     font-family: avenir next bold;
-    line-height: 4.25rem;
+    line-height: 100px;
     padding-left: 1.5rem;
+  }
+  .musicPlayer {
+    width: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: 24px;
   }
 }
 
@@ -712,5 +718,38 @@ footer {
   margin-bottom: 16px;
   padding: 20px 0;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .show-tickets {
+    width: 93.75%;
+    height: auto;
+  }
+  .show-tickets .showCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .show-tickets .showCard h3 {
+    padding-bottom: 0;
+  }
+  .show-tickets .showCard h4 {
+    display: none;
+  }
+  .show-tickets .showCard p {
+    padding-bottom: 0;
+  }
+  .show-tickets .showCard button {
+    width: 20%;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: 20px 0;
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

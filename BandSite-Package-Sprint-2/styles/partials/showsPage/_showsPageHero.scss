@@ -36,14 +36,22 @@
 // ====== TABLET VERSION ======
 @include tablet {
     .sp-hero {
-        height: 25rem; //required height is 400px
+        height: 670px; //required height is 670px
         &__text {
-            width: 37.5rem;
-            font-size: 2.25rem;
+            width: 600px;
+            font-size: 2.5rem;
             font-family: $font-bold;
-            line-height: 4.25rem;
+            line-height: 100px;
             padding-left: 1.5rem;
         }
+    }
+    .musicPlayer {
+        width: 50%;
+        // height: 100px;
+        position: absolute;
+        bottom: -5px;
+        left: 24px;
+        // margin: 64px 0;
     }
 }
 

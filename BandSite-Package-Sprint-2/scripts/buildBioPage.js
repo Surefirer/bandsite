@@ -23,6 +23,10 @@ const liveCommentName = document.createElement("h4");
 liveCommentName.innerHTML = "NAME";
 
 const nameTextBox = document.createElement("input");
+nameTextBox.classList.add("nameTextBox");
+
+// const nameTextBoxPlaceHolder = document.querySelector(".nameTextBox").placeholder = "kkk";
+// document.getElementsByTagName("input").setAttribute("id", "nameTextBox");
 // nameTextBox.innerHTML = "Mohan Muruge";
 
 const liveCommentTitle = document.createElement("h4");
@@ -30,11 +34,16 @@ liveCommentTitle.innerHTML = "COMMENT";
 
 const liveCommentBox = document.createElement("input");
 
+const liveCommentBtn = document.createElement("button");
+liveCommentBox.classList.add("liveCommentBtn");
+liveCommentBtn.innerHTML = "SUBMIT";
+
 container.appendChild(commentTitle);
 container.appendChild(liveCommentName);
 container.appendChild(nameTextBox);
 container.appendChild(liveCommentTitle);
-container.append(liveCommentBox);
+container.appendChild(liveCommentBox);
+container.appendChild(liveCommentBtn);
 
 
 function constructComments(customers) {

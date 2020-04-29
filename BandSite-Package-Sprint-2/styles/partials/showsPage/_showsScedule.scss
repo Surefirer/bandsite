@@ -36,3 +36,32 @@
         border-radius: 10px;
     }
 }
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .show-tickets {
+        width: 93.75%;
+        height: auto;
+        .showCard {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            h3 {
+                padding-bottom: 0;
+            }
+            h4 {
+                display: none;
+            }
+            p {
+                padding-bottom: 0;
+            }
+            button {
+                width: 20%;
+                font-size: 1rem;
+                margin-bottom: 0;
+                padding: 20px 0;
+                border-radius: 10px;
+            }
+        }
+    }
+}
