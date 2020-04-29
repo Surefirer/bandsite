@@ -575,12 +575,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sp-hero__text {
   color: #ffffff;
   font-family: avenir next bold;
   width: 13.125rem;
+  height: 30vh;
   padding-left: 1rem;
   font-size: 1rem;
   line-height: 2rem;
@@ -589,6 +594,12 @@ footer {
 .sp-hero__text--title {
   font-family: avenir next regular;
   padding-top: 64px;
+}
+
+.musicPlayer {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
 }
 
 @media (min-width: 768px) {
