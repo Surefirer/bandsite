@@ -568,38 +568,39 @@ footer {
 }
 
 .sp-hero {
-  height: 90vh;
+  height: 472px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5))), url(../../assets/images/showPageImg.jpg) no-repeat;
   background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/showPageImg.jpg) no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
 }
 
 .sp-hero__text {
   color: #ffffff;
   font-family: avenir next bold;
-  width: 13.125rem;
-  height: 30vh;
+  width: 333px;
+  height: 200px;
   padding-left: 1rem;
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 44px;
 }
 
 .sp-hero__text--title {
   font-family: avenir next regular;
   padding-top: 64px;
+  font-size: 16px;
+  margin: 0;
 }
 
 .musicPlayer {
   width: 80%;
-  margin: 0 auto;
-  height: 100px;
+  position: absolute;
+  bottom: -15px;
+  left: 10%;
+  margin: 64px 0;
 }
 
 @media (min-width: 768px) {

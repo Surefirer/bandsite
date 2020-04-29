@@ -1,28 +1,36 @@
 .sp-hero {
-    height: 90vh; // required height is 472px
+    height: 472px; // required height is 472px
     background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/showPageImg.jpg) no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    position: relative;
     &__text {
         color: $secondary-color;
         font-family: $font-bold;
-        width: 13.125rem;
-        height: 30vh;
+        // width: 15rem;
+        width: 333px;
+        height: 200px;
         padding-left: 1rem;
-        font-size: 1rem;
-        line-height: 2rem;
+        // font-size: 1rem;
+        font-size: 24px;
+        line-height: 44px;
     }
     &__text--title {
         font-family: $font-regular;
         padding-top: 64px;
+        font-size: 16px;
+        margin: 0;
     }
 }
 
 .musicPlayer {
     width: 80%;
-    margin: 0 auto;
-    height: 100px;
+    // height: 100px;
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    margin: 64px 0;
 }
 
 // ====== TABLET VERSION ======
