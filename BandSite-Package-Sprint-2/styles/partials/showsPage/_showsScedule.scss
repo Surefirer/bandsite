@@ -1,0 +1,38 @@
+.show-tickets {
+    width: 90%;
+    height: 2320px;
+    margin: 0 auto;
+    .showCard {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $tertiary-color;
+        &__date {
+            padding-top: 30px;
+        }
+    }
+    h1 {
+        padding-top: 32px;
+        padding-bottom: 10px;
+        font-family: $font-bold;
+    }
+    h3 {
+        padding-bottom: 24px;
+    }
+    h4 {
+        color: $tertiary-color;
+        margin: 0;
+        padding-bottom: 16px;
+    }
+    p {
+        padding-bottom: 32px;
+    }
+    button {
+        color: white;
+        background: black;
+        border: none;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 16px;
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+}

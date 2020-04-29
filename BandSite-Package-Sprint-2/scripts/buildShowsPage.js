@@ -40,8 +40,8 @@ console.table(shows);
 
 const container = document.querySelector(".show-tickets");
 
-const showsTitle = document.createElement("h3");
-showsTitle.innerHTML = "SHOWS";
+const showsTitle = document.createElement("h1");
+showsTitle.innerHTML = "Shows";
 
 container.appendChild(showsTitle);
 
@@ -51,9 +51,10 @@ function constructShows(shows) {
         showCard.classList.add("showCard");
 
         const dateTitle = document.createElement("h4");
+        dateTitle.classList.add("showCard__date");
         dateTitle.innerHTML = "DATE";
 
-        const date = document.createElement("h4");
+        const date = document.createElement("h3");
         date.innerHTML = show.date;
 
         const venueTitle = document.createElement("h4");

@@ -667,4 +667,50 @@ footer {
   border-radius: 10px;
   font-size: 1rem;
 }
+
+.show-tickets {
+  width: 90%;
+  height: 2320px;
+  margin: 0 auto;
+}
+
+.show-tickets .showCard {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.show-tickets .showCard__date {
+  padding-top: 30px;
+}
+
+.show-tickets h1 {
+  padding-top: 32px;
+  padding-bottom: 10px;
+  font-family: avenir next bold;
+}
+
+.show-tickets h3 {
+  padding-bottom: 24px;
+}
+
+.show-tickets h4 {
+  color: #AFAFAF;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.show-tickets p {
+  padding-bottom: 32px;
+}
+
+.show-tickets button {
+  color: white;
+  background: black;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  padding: 20px 0;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=main.css.map */
