@@ -1,0 +1,11 @@
+.comment {
+    width: 90%;
+    margin: 0 auto;
+    .userImg img {
+        width: 40px;
+    }
+    .comment-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

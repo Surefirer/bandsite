@@ -422,6 +422,24 @@ a {
   }
 }
 
+.comment {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.comment .userImg img {
+  width: 40px;
+}
+
+.comment .comment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 footer {
   width: 100%;
   background-color: #323232;

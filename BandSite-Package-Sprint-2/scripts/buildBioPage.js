@@ -16,36 +16,36 @@ console.table(customers);
 
 const container = document.querySelector(".comment");
 
-const commentTitle = document.createElement("h2");
-commentTitle.innerHTML = "Join the Conversation";
+// const commentTitle = document.createElement("h2");
+// commentTitle.innerHTML = "Join the Conversation";
 
-const liveCommentName = document.createElement("h4");
-liveCommentName.innerHTML = "NAME";
+// const liveCommentName = document.createElement("h4");
+// liveCommentName.innerHTML = "NAME";
 
-const nameTextBox = document.createElement("input");
-nameTextBox.classList.add("nameTextBox");
+// const nameTextBox = document.createElement("input");
+// nameTextBox.classList.add("nameTextBox");
 
-nameTextBox.setAttribute("placeholder", "dkkdkdk");
+// nameTextBox.setAttribute("placeholder", "dkkdkdk");
 
 // const nameTextBoxPlaceHolder = document.querySelector(".nameTextBox").placeholder = "kkk";
 // document.getElementsByTagName("input").setAttribute("id", "nameTextBox");
 // nameTextBox.innerHTML = "Mohan Muruge";
 
-const liveCommentTitle = document.createElement("h4");
-liveCommentTitle.innerHTML = "COMMENT";
+// const liveCommentTitle = document.createElement("h4");
+// liveCommentTitle.innerHTML = "COMMENT";
 
-const liveCommentBox = document.createElement("input");
+// const liveCommentBox = document.createElement("textarea");
 
-const liveCommentBtn = document.createElement("button");
-liveCommentBox.classList.add("liveCommentBtn");
-liveCommentBtn.innerHTML = "SUBMIT";
+// const liveCommentBtn = document.createElement("button");
+// liveCommentBox.classList.add("liveCommentBtn");
+// liveCommentBtn.innerHTML = "SUBMIT";
 
-container.appendChild(commentTitle);
-container.appendChild(liveCommentName);
-container.appendChild(nameTextBox);
-container.appendChild(liveCommentTitle);
-container.appendChild(liveCommentBox);
-container.appendChild(liveCommentBtn);
+// container.appendChild(commentTitle);
+// container.appendChild(liveCommentName);
+// container.appendChild(nameTextBox);
+// container.appendChild(liveCommentTitle);
+// container.appendChild(liveCommentBox);
+// container.appendChild(liveCommentBtn);
 
 
 function constructComments(customers) {
