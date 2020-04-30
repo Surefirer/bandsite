@@ -25,6 +25,8 @@ liveCommentName.innerHTML = "NAME";
 const nameTextBox = document.createElement("input");
 nameTextBox.classList.add("nameTextBox");
 
+nameTextBox.setAttribute("placeholder", "dkkdkdk");
+
 // const nameTextBoxPlaceHolder = document.querySelector(".nameTextBox").placeholder = "kkk";
 // document.getElementsByTagName("input").setAttribute("id", "nameTextBox");
 // nameTextBox.innerHTML = "Mohan Muruge";

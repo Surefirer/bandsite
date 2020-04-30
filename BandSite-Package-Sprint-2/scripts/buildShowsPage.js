@@ -1,35 +1,29 @@
 const shows = [{
-        id: 1,
         date: "Mon Dec 17 2018",
         venue: "Ronald Lane",
         location: "San Fancisco, CA",
     },
     {
-        id: 2,
         date: "Tue July 18 2019",
         venue: "Pier 3 East",
         location: "San Fancisco, CA",
     },
     {
-        id: 3,
         date: "Fri Jul 22 2019",
         venue: "View Loungue",
         location: "San Fancisco, CA",
     },
     {
-        id: 4,
         date: "Sat Aug 12 2019",
         venue: "Hyatt Agency",
         location: "San Fancisco, CA",
     },
     {
-        id: 5,
         date: "Fri Sep 05 2019",
         venue: "Moscow Center",
         location: "San Fancisco, CA",
     },
     {
-        id: 6,
         date: "Wed Aug 11 2019",
         venue: "Pres Club",
         location: "San Fancisco, CA",
@@ -40,10 +34,34 @@ console.table(shows);
 
 const container = document.querySelector(".show-tickets");
 
+const tbltTitleContainer = document.createElement("div");
+tbltTitleContainer.classList.add("tbltTitleContainer");
+
+
 const showsTitle = document.createElement("h1");
+showsTitle.classList.add("showsTitle");
 showsTitle.innerHTML = "Shows";
 
+const tbltDateTitle = document.createElement("h3");
+tbltDateTitle.classList.add("tbltDateTitle");
+tbltDateTitle.innerHTML = "Date";
+
+const tbltVenueTitle = document.createElement("h3");
+tbltVenueTitle.classList.add("tbltVenueTitle");
+tbltVenueTitle.innerHTML = "Venue";
+
+const tbltLocationTitle = document.createElement("h3");
+tbltLocationTitle.classList.add("tbltLocationTitle");
+tbltLocationTitle.innerHTML = "Location";
+
+
 container.appendChild(showsTitle);
+tbltTitleContainer.appendChild(tbltDateTitle);
+tbltTitleContainer.appendChild(tbltVenueTitle);
+tbltTitleContainer.appendChild(tbltLocationTitle);
+
+container.appendChild(tbltTitleContainer);
+
 
 function constructShows(shows) {
     for (show of shows) {
@@ -51,22 +69,25 @@ function constructShows(shows) {
         showCard.classList.add("showCard");
 
         const dateTitle = document.createElement("h4");
-        dateTitle.classList.add("showCard__date");
+        dateTitle.classList.add("showCard__dateTitle");
         dateTitle.innerHTML = "DATE";
 
         const date = document.createElement("h3");
+        date.classList.add("showCard__date");
         date.innerHTML = show.date;
 
         const venueTitle = document.createElement("h4");
         venueTitle.innerHTML = "VENUE";
 
         const venue = document.createElement("p");
+        venue.classList.add("showCard__venue");
         venue.innerHTML = show.venue;
 
         const locationTitle = document.createElement("h4");
         locationTitle.innerHTML = "LOCATION";
 
         const location = document.createElement("p");
+        location.classList.add("showCard__location");
         location.innerHTML = show.location;
 
         const button = document.createElement("button")

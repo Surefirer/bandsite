@@ -585,7 +585,7 @@ footer {
   height: 200px;
   padding-left: 1rem;
   font-size: 24px;
-  line-height: 44px;
+  line-height: 32px;
 }
 
 .sp-hero__text--title {
@@ -685,7 +685,7 @@ footer {
   border-bottom: 1px solid #AFAFAF;
 }
 
-.show-tickets .showCard__date {
+.show-tickets .showCard__dateTitle {
   padding-top: 30px;
 }
 
@@ -720,20 +720,51 @@ footer {
   border-radius: 10px;
 }
 
+.show-tickets .tbltDateTitle,
+.show-tickets .tbltVenueTitle,
+.show-tickets .tbltLocationTitle {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .show-tickets {
     width: 93.75%;
-    height: auto;
+    height: 770px;
   }
-  .show-tickets .showCard {
+  .show-tickets .tbltTitleContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .show-tickets .tbltTitleContainer h3 {
+    padding-bottom: 0;
+    padding-top: 24px;
+    color: #AFAFAF;
+  }
+  .show-tickets .tbltTitleContainer .tbltDateTitle,
+  .show-tickets .tbltTitleContainer .tbltVenueTitle,
+  .show-tickets .tbltTitleContainer .tbltLocationTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+  }
+  .show-tickets .showCard {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .show-tickets .showCard__date, .show-tickets .showCard__venue, .show-tickets .showCard__location {
+    width: 25%;
+    text-align: left;
   }
   .show-tickets .showCard h3 {
     padding-bottom: 0;
@@ -745,7 +776,7 @@ footer {
     padding-bottom: 0;
   }
   .show-tickets .showCard button {
-    width: 20%;
+    width: 25%;
     font-size: 1rem;
     margin-bottom: 0;
     padding: 20px 0;
