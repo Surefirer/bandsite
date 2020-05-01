@@ -75,11 +75,24 @@ function handleFormSubmit(event) {
     const userNameVal = event.target.userName.value;
     const userCommentsVal = event.target.userComments.value;
 
-    customers.push({
-        name: userNameVal,
-        comment: userCommentsVal,
-        date: new Date(),
-    });
+    if (userNameVal !== "" && userCommentsVal !== "") {
+        customers.push({
+            name: userNameVal,
+            comment: userCommentsVal,
+            date: new Date(),
+        });
+        liveCommentForm.reset();
+        constructComments(dateSortArray(customers));
+    } else {
+        alert("Please add a name and comment");
+    }
 
-    constructComments(customers);
+
+    constructComments(dateSortArray(customers));
+}
+
+// sort array by date
+function dateSortArray(arr) {
+    const sortedArray = arr.slice().sort((a, b) => b.date - a.date);
+    return sortedArray;
 }

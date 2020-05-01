@@ -509,6 +509,7 @@ a {
   height: 100px;
   background-color: #f8faf8;
   border: 1px solid #e9e6e6;
+  font-family: avenir next regular;
   border-radius: 5px;
   padding-left: 10px;
   padding-top: 15px;
@@ -872,6 +873,9 @@ footer {
     position: relative;
     margin-top: 330px;
     margin-left: 64px;
+  }
+  .sp-hero .musicPlayer iframe {
+    height: 146px;
   }
 }
 

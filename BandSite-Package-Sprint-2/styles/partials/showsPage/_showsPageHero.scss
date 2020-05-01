@@ -25,7 +25,7 @@
 
 .musicPlayer {
     width: 80%;
-    // height: 100px;
+    // height: 50px;
     position: absolute;
     bottom: -15px;
     left: 10%;
@@ -77,6 +77,9 @@
             position: relative;
             margin-top: 330px;
             margin-left: 64px;
+            iframe {
+                height: 146px;
+            }
         }
     }
 }
