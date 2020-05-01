@@ -12,9 +12,8 @@
         width: 333px;
         height: 200px;
         padding-left: 1rem;
-        // font-size: 1rem;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 44px; // in the Typography doc, 24px font-size line-height is 32px, however, use 32px here is visually incorrect.
     }
     &__text--title {
         font-family: $font-regular;
@@ -41,12 +40,17 @@
             width: 600px;
             font-size: 2.5rem;
             font-family: $font-bold;
-            line-height: 100px;
+            line-height: 90px;
             padding-left: 1.5rem;
+        }
+        &__text--title {
+            font-family: $font-bold;
+            padding-top: 96px;
+            font-size: 24px;
         }
     }
     .musicPlayer {
-        width: 50%;
+        width: 55%;
         // height: 100px;
         position: absolute;
         bottom: -5px;

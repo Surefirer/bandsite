@@ -806,7 +806,7 @@ footer {
   height: 200px;
   padding-left: 1rem;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 44px;
 }
 
 .sp-hero__text--title {
@@ -832,11 +832,16 @@ footer {
     width: 600px;
     font-size: 2.5rem;
     font-family: avenir next bold;
-    line-height: 100px;
+    line-height: 90px;
     padding-left: 1.5rem;
   }
+  .sp-hero__text--title {
+    font-family: avenir next bold;
+    padding-top: 96px;
+    font-size: 24px;
+  }
   .musicPlayer {
-    width: 50%;
+    width: 55%;
     position: absolute;
     bottom: -5px;
     left: 24px;
