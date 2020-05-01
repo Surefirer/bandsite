@@ -62,10 +62,21 @@
 // ====== DESKTOP VERSION ======
 @include desktop {
     .sp-hero {
-        height: 41.875rem;
+        display: flex;
+        height: 670px;
+        &__text--title {
+            padding-top: 160px;
+        }
         &__text {
-            width: 43.75rem;
+            width: 780px;
             padding-left: 11.25rem;
+        }
+        .musicPlayer {
+            width: 436px;
+            height: 146px;
+            position: relative;
+            margin-top: 330px;
+            margin-left: 64px;
         }
     }
 }

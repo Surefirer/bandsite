@@ -854,11 +854,24 @@ footer {
 
 @media (min-width: 1440px) {
   .sp-hero {
-    height: 41.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 670px;
+  }
+  .sp-hero__text--title {
+    padding-top: 160px;
   }
   .sp-hero__text {
-    width: 43.75rem;
+    width: 780px;
     padding-left: 11.25rem;
+  }
+  .sp-hero .musicPlayer {
+    width: 436px;
+    height: 146px;
+    position: relative;
+    margin-top: 330px;
+    margin-left: 64px;
   }
 }
 
