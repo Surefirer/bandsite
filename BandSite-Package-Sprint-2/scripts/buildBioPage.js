@@ -1,11 +1,17 @@
-// referencing DOM elements
+/* --------------------------------------------
+ *  Referencing DOM elements
+ *-----------------------------------------------*/
 let container = document.querySelector(".commentList");
 let liveCommentForm = document.querySelector(".liveCommentForm");
 
-// add event listerner
+/* --------------------------------------------
+ *  Add event listerner
+ *-----------------------------------------------*/
 liveCommentForm.addEventListener("submit", handleFormSubmit);
 
-// customers name and comment array
+/* --------------------------------------------
+ *  Customers name and comment array
+ *-----------------------------------------------*/
 const customers = [{
         name: "Micheal Lyons",
         comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
@@ -23,9 +29,11 @@ const customers = [{
     },
 ];
 
-//console.table(customers); --- for test only
+//console.table(customers); --- for test purpose
 
-// display&list of comments in page
+/* --------------------------------------------
+ *  Display & list of comments in page
+ *-----------------------------------------------*/
 function constructComments(customers) {
     container.innerHTML = "";
 
@@ -68,7 +76,9 @@ function constructComments(customers) {
 
 constructComments(customers);
 
-// function for form submit and add new comment
+/* --------------------------------------------
+ *  Function for form submit and add new comment
+ *-----------------------------------------------*/
 function handleFormSubmit(event) {
     event.preventDefault();
 
@@ -91,7 +101,9 @@ function handleFormSubmit(event) {
     constructComments(dateSortArray(customers));
 }
 
-// sort array by date
+/* --------------------------------------------
+ *  Sort array by date
+ *-----------------------------------------------*/
 function dateSortArray(arr) {
     const sortedArray = arr.slice().sort((a, b) => b.date - a.date);
     return sortedArray;

@@ -1,3 +1,10 @@
+/* --------------------------------------------
+ *  Referencing DOM elements
+ *-----------------------------------------------*/
+const container = document.querySelector(".show-tickets");
+
+
+
 const shows = [{
         date: "Mon Dec 17 2018",
         venue: "Ronald Lane",
@@ -32,8 +39,11 @@ const shows = [{
 
 console.table(shows);
 
-const container = document.querySelector(".show-tickets");
-
+/* --------------------------------------------
+ *  desktop screen size subtitle under "Shows". 
+ *  This part is hidden in mobile and tablet.
+ *  Only show in desktop size.
+ *-----------------------------------------------*/
 const showTicketWrapper = document.createElement("div");
 showTicketWrapper.classList.add("showTicketWrapper");
 
@@ -65,6 +75,9 @@ tbltTitleContainer.appendChild(tbltLocationTitle);
 showTicketWrapper.appendChild(tbltTitleContainer);
 
 
+/* --------------------------------------------
+ *  list shows by looping and display in the page
+ *-----------------------------------------------*/
 function constructShows(shows) {
     for (show of shows) {
         const showCard = document.createElement("div");

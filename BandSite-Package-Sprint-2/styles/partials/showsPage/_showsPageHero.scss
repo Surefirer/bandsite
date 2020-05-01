@@ -1,14 +1,12 @@
 .sp-hero {
-    height: 472px; // required height is 472px
+    height: 80.4vh; // required height is 472px
     background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/showPageImg.jpg) no-repeat;
     background-size: cover;
     display: flex;
-    // flex-direction: column;
     position: relative;
     &__text {
         color: $secondary-color;
         font-family: $font-bold;
-        // width: 15rem;
         width: 333px;
         height: 200px;
         padding-left: 1rem;
@@ -18,14 +16,13 @@
     &__text--title {
         font-family: $font-regular;
         padding-top: 64px;
-        font-size: 16px;
+        font-size: 1rem;
         margin: 0;
     }
 }
 
 .musicPlayer {
     width: 80%;
-    // height: 50px;
     position: absolute;
     bottom: -15px;
     left: 10%;
@@ -35,27 +32,25 @@
 // ====== TABLET VERSION ======
 @include tablet {
     .sp-hero {
-        height: 670px; //required height is 670px
+        height: 114vh;
         &__text {
             width: 600px;
             font-size: 2.5rem;
             font-family: $font-bold;
             line-height: 90px;
-            padding-left: 1.5rem;
+            padding-left: 24px;
         }
         &__text--title {
             font-family: $font-bold;
             padding-top: 96px;
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
     .musicPlayer {
         width: 55%;
-        // height: 100px;
         position: absolute;
         bottom: -5px;
         left: 24px;
-        // margin: 64px 0;
     }
 }
 
@@ -63,7 +58,7 @@
 @include desktop {
     .sp-hero {
         display: flex;
-        height: 670px;
+        height: 114vh;
         &__text--title {
             padding-top: 160px;
         }
