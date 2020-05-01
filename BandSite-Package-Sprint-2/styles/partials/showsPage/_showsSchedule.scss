@@ -1,95 +1,112 @@
-.show-tickets {
-    width: 90%;
-    height: 2320px;
-    margin: 0 auto;
-    .showCard {
-        padding-bottom: 5px;
-        border-bottom: 1px solid $tertiary-color;
-        &__dateTitle {
-            padding-top: 30px;
-        }
-    }
-    h1 {
-        padding-top: 32px;
-        padding-bottom: 10px;
-        font-family: $font-bold;
-    }
-    h3 {
-        padding-bottom: 24px;
-    }
-    h4 {
-        color: $tertiary-color;
-        margin: 0;
-        padding-bottom: 16px;
-    }
-    p {
-        padding-bottom: 32px;
-    }
-    button {
-        color: white;
-        background: black;
-        border: none;
-        width: 100%;
-        font-size: 1rem;
-        margin-bottom: 16px;
-        padding: 20px 0;
-        border-radius: 10px;
-    }
-    .tbltDateTitle,
-    .tbltVenueTitle,
-    .tbltLocationTitle {
-        display: none;
-    }
-}
-
-// ====== TABLET VERSION ======
-@include tablet {
     .show-tickets {
-        width: 93.75%;
-        height: 770px;
-        // height: auto;
-        .tbltTitleContainer {
-            display: flex;
-            h3 {
-                padding-bottom: 0;
-                padding-top: 24px;
-                color: $tertiary-color;
-            }
-            .tbltDateTitle,
-            .tbltVenueTitle,
-            .tbltLocationTitle {
-                display: flex;
-                width: 25%;
+        width: 90%;
+        height: 2320px;
+        margin: 0 auto;
+        .showCard {
+            padding-bottom: 5px;
+            border-bottom: 1px solid $tertiary-color;
+            &__dateTitle {
+                padding-top: 30px;
             }
         }
-        .showCard {
-            height: 100px;
+        h1 {
+            padding-top: 32px;
+            padding-bottom: 10px;
+            font-family: $font-bold;
+        }
+        h3 {
+            padding-bottom: 24px;
+        }
+        h4 {
+            color: $tertiary-color;
+            margin: 0;
+            padding-bottom: 16px;
+        }
+        p {
+            padding-bottom: 32px;
+        }
+        button {
+            color: white;
+            background: black;
+            border: none;
+            width: 100%;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            padding: 20px 0;
+            border-radius: 10px;
+        }
+        .tbltDateTitle,
+        .tbltVenueTitle,
+        .tbltLocationTitle {
+            display: none;
+        }
+    }
+    
+    // ====== TABLET VERSION ======
+    @include tablet {
+        .show-tickets {
+            width: 93.75%;
+            height: 770px;
+            // height: auto;
+            .tbltTitleContainer {
+                display: flex;
+                h3 {
+                    padding-bottom: 0;
+                    padding-top: 24px;
+                    color: $tertiary-color;
+                }
+                .tbltDateTitle,
+                .tbltVenueTitle,
+                .tbltLocationTitle {
+                    display: flex;
+                    width: 25%;
+                }
+            }
+            .showCard {
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                align-items: center;
+                &__date,
+                &__venue,
+                &__location {
+                    width: 25%;
+                    text-align: left;
+                }
+                h3 {
+                    padding-bottom: 0;
+                }
+                h4 {
+                    display: none;
+                }
+                p {
+                    padding-bottom: 0;
+                }
+                button {
+                    width: 25%;
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    padding: 20px 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    
+    // ====== DESKTOP VERSION ======
+    @include desktop {
+        .show-tickets {
+            width: 75%;
+            height: 700px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            text-align: left;
-            align-items: center;
-            &__date,
-            &__venue,
-            &__location {
-                width: 25%;
-                text-align: left;
+            .showTicketWrapper {
+                width: 100%;
             }
-            h3 {
-                padding-bottom: 0;
-            }
-            h4 {
-                display: none;
-            }
-            p {
-                padding-bottom: 0;
-            }
-            button {
-                width: 25%;
-                font-size: 1rem;
-                margin-bottom: 0;
-                padding: 20px 0;
-                border-radius: 10px;
+            .showTicketWrapper {
+                width: 75%;
             }
         }
     }
-}

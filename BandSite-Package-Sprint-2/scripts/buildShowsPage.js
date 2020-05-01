@@ -34,33 +34,35 @@ console.table(shows);
 
 const container = document.querySelector(".show-tickets");
 
-const tbltTitleContainer = document.createElement("div");
-tbltTitleContainer.classList.add("tbltTitleContainer");
-
+const showTicketWrapper = document.createElement("div");
+showTicketWrapper.classList.add("showTicketWrapper");
 
 const showsTitle = document.createElement("h1");
 showsTitle.classList.add("showsTitle");
 showsTitle.innerHTML = "Shows";
 
+const tbltTitleContainer = document.createElement("div");
+tbltTitleContainer.classList.add("tbltTitleContainer");
+
 const tbltDateTitle = document.createElement("h3");
 tbltDateTitle.classList.add("tbltDateTitle");
-tbltDateTitle.innerHTML = "Date";
+tbltDateTitle.innerHTML = "DATES";
 
 const tbltVenueTitle = document.createElement("h3");
 tbltVenueTitle.classList.add("tbltVenueTitle");
-tbltVenueTitle.innerHTML = "Venue";
+tbltVenueTitle.innerHTML = "VENUE";
 
 const tbltLocationTitle = document.createElement("h3");
 tbltLocationTitle.classList.add("tbltLocationTitle");
-tbltLocationTitle.innerHTML = "Location";
-
+tbltLocationTitle.innerHTML = "LOCATION";
 
 container.appendChild(showsTitle);
+container.appendChild(showTicketWrapper);
 tbltTitleContainer.appendChild(tbltDateTitle);
 tbltTitleContainer.appendChild(tbltVenueTitle);
 tbltTitleContainer.appendChild(tbltLocationTitle);
 
-container.appendChild(tbltTitleContainer);
+showTicketWrapper.appendChild(tbltTitleContainer);
 
 
 function constructShows(shows) {
@@ -101,7 +103,7 @@ function constructShows(shows) {
         showCard.appendChild(location);
         showCard.appendChild(button);
 
-        container.appendChild(showCard);
+        showTicketWrapper.appendChild(showCard);
     }
 }
 

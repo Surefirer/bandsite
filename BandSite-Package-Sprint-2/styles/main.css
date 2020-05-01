@@ -641,6 +641,10 @@ a {
   .commentList {
     width: 38%;
   }
+  .showsTitle {
+    width: 200px;
+    display: inline-block;
+  }
 }
 
 footer {
@@ -1007,6 +1011,26 @@ footer {
     margin-bottom: 0;
     padding: 20px 0;
     border-radius: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .show-tickets {
+    width: 75%;
+    height: 700px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .show-tickets .showTicketWrapper {
+    width: 100%;
+  }
+  .show-tickets .showTicketWrapper {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=main.css.map */
