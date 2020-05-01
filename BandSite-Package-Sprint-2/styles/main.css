@@ -15,6 +15,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 h5,
 ul {
   padding: 0;
@@ -425,10 +426,14 @@ a {
 .comment {
   width: 90%;
   margin: 0 auto;
+  border-bottom: 1px solid #e9e6e6;
 }
 
-.comment .userImg img {
-  width: 40px;
+.comment__title {
+  font-size: 26px;
+  font-family: avenir next bold;
+  padding-top: 32px;
+  padding-bottom: 40px;
 }
 
 .comment .comment-container {
@@ -438,6 +443,119 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.comment .comment-container .userImg img {
+  width: 70%;
+  padding-top: 15px;
+}
+
+.comment .liveCommentForm {
+  width: 100%;
+}
+
+.comment .liveCommentForm__name {
+  font-size: 0.8rem;
+  color: #AFAFAF;
+  padding-bottom: 10px;
+}
+
+.comment .liveCommentForm__nameInput {
+  width: 100%;
+  height: 50px;
+  background-color: #f8faf8;
+  border: 1px solid #e9e6e6;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__nameInput:focus {
+  border: 2px solid #323232;
+  outline: 0;
+}
+
+.comment .liveCommentForm__nameInput::-webkit-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__nameInput:-ms-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__nameInput::-ms-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__nameInput::placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__comment {
+  font-size: 0.8rem;
+  color: #AFAFAF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.comment .liveCommentForm__input {
+  width: 100%;
+  height: 100px;
+  background-color: #f8faf8;
+  border: 1px solid #e9e6e6;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__input:focus {
+  border: 2px solid #323232;
+  outline: 0;
+}
+
+.comment .liveCommentForm__input::-webkit-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__input:-ms-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__input::-ms-input-placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__input::placeholder {
+  font-family: avenir next regular;
+  padding-left: 10px;
+}
+
+.comment .liveCommentForm__submit button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  background-color: #323232;
+  color: #ffffff;
+  outline: 0;
+  border: 1px solid #323232;
+  border-radius: 5px;
+}
+
+.commentList {
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+
+.commentList .showComments {
+  padding: 24px 0;
+  border-bottom: 1px solid #e9e6e6;
 }
 
 footer {
