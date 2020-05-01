@@ -9,7 +9,7 @@ liveCommentForm.addEventListener("submit", handleFormSubmit);
 const customers = [{
         name: "Micheal Lyons",
         comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-        date: new Date("12/18/2018"),
+        date: new Date("2018-12-18"),
     },
     {
         name: "Gary Wong",
@@ -33,6 +33,18 @@ function constructComments(customers) {
         const showComments = document.createElement("div");
         showComments.classList.add("showComments");
 
+        const userIconGreyWrapper = document.createElement('div');
+        userIconGreyWrapper.classList.add("userIconGreyWrapper");
+
+        const userIconGrey = document.createElement("img");
+        userIconGrey.src = './assets/images/usericon-grey.png';
+
+        const showCommentsWrapper = document.createElement('div');
+        showCommentsWrapper.classList.add("showCommentsWrapper");
+
+        const showCommentsWrapperEx = document.createElement('div');
+        showCommentsWrapperEx.classList.add("showCommentsWrapper__Ex");
+
         const name = document.createElement("h4");
         name.innerHTML = customer.name;
 
@@ -42,9 +54,13 @@ function constructComments(customers) {
         const comment = document.createElement("p");
         comment.innerHTML = customer.comment;
 
-        showComments.appendChild(name);
-        showComments.appendChild(date);
-        showComments.appendChild(comment);
+        userIconGreyWrapper.appendChild(userIconGrey);
+        showComments.appendChild(userIconGreyWrapper);
+        showCommentsWrapperEx.appendChild(name);
+        showCommentsWrapperEx.appendChild(date);
+        showCommentsWrapper.appendChild(comment);
+        showComments.appendChild(showCommentsWrapper);
+        showCommentsWrapper.appendChild(showCommentsWrapperEx);
 
         container.appendChild(showComments);
     }

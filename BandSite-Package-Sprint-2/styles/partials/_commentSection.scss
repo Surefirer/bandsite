@@ -1,7 +1,7 @@
 .comment {
     width: 90%;
     margin: 0 auto;
-    border-bottom: 1px solid rgb(233, 230, 230);
+    // border-bottom: 1px solid rgb(233, 230, 230);
     &__title {
         font-size: 26px;
         font-family: $font-bold;
@@ -22,7 +22,7 @@
         // width: 224px;
         width: 100%;
         &__name {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: $tertiary-color;
             padding-bottom: 10px;
         }
@@ -41,10 +41,11 @@
         }
         &__nameInput::placeholder {
             font-family: $font-regular;
-            padding-left: 10px;
+            font-size: 0.9rem;
+            color: $lightBlack-color;
         }
         &__comment {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: $tertiary-color;
             padding-top: 20px;
             padding-bottom: 10px;
@@ -56,6 +57,7 @@
             border: 1px solid rgb(233, 230, 230);
             border-radius: 5px;
             padding-left: 10px;
+            padding-top: 15px;
         }
         &__input:focus {
             border: 2px solid $primary-color;
@@ -63,7 +65,8 @@
         }
         &__input::placeholder {
             font-family: $font-regular;
-            padding-left: 10px;
+            font-size: 1rem;
+            color: $lightBlack-color;
         }
         &__submit button {
             width: 100%;
@@ -84,7 +87,74 @@
     width: 90%;
     margin: 0 auto 40px auto;
     .showComments {
+        .userIconGreyWrapper img {
+            width: 50px;
+        }
+        .showCommentsWrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 80%;
+            &__Ex {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 16px;
+                time {
+                    color: $tertiary-color;
+                }
+            }
+        }
         padding: 24px 0;
         border-bottom: 1px solid rgb(233, 230, 230);
+        border-top: 1px solid rgb(233, 230, 230);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .comment__title {
+        font-size: 36px;
+        font-family: $font-bold;
+    }
+    .comment-container {
+        width: 80%;
+        margin: 0 auto;
+        .liveCommentForm__submit {
+            button {
+                width: 50%;
+                float: right;
+            }
+        }
+    }
+    .commentList {
+        width: 72%;
+        .showComments {
+            .userIconGreyWrapper {
+                // width: 80%;
+                img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .commentList .showComments .showCommentsWrapper__Ex {
+        justify-content: initial;
+        time {
+            padding-left: 10px;
+        }
+    }
+}
+
+// ====== DESKTOP VERSION ======
+@include desktop {
+    .comment {
+        width: 75%;
+        .comment-container {
+            width: 50%;
+        }
+    }
+    .commentList {
+        width: 38%;
     }
 }

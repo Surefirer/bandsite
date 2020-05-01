@@ -426,7 +426,6 @@ a {
 .comment {
   width: 90%;
   margin: 0 auto;
-  border-bottom: 1px solid #e9e6e6;
 }
 
 .comment__title {
@@ -455,7 +454,7 @@ a {
 }
 
 .comment .liveCommentForm__name {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #AFAFAF;
   padding-bottom: 10px;
 }
@@ -476,26 +475,30 @@ a {
 
 .comment .liveCommentForm__nameInput::-webkit-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__nameInput:-ms-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__nameInput::-ms-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__nameInput::placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__comment {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #AFAFAF;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -508,6 +511,7 @@ a {
   border: 1px solid #e9e6e6;
   border-radius: 5px;
   padding-left: 10px;
+  padding-top: 15px;
 }
 
 .comment .liveCommentForm__input:focus {
@@ -517,22 +521,26 @@ a {
 
 .comment .liveCommentForm__input::-webkit-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 1rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__input:-ms-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 1rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__input::-ms-input-placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 1rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__input::placeholder {
   font-family: avenir next regular;
-  padding-left: 10px;
+  font-size: 1rem;
+  color: #525252;
 }
 
 .comment .liveCommentForm__submit button {
@@ -556,6 +564,83 @@ a {
 .commentList .showComments {
   padding: 24px 0;
   border-bottom: 1px solid #e9e6e6;
+  border-top: 1px solid #e9e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentList .showComments .userIconGreyWrapper img {
+  width: 50px;
+}
+
+.commentList .showComments .showCommentsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 80%;
+}
+
+.commentList .showComments .showCommentsWrapper__Ex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.commentList .showComments .showCommentsWrapper__Ex time {
+  color: #AFAFAF;
+}
+
+@media (min-width: 768px) {
+  .comment__title {
+    font-size: 36px;
+    font-family: avenir next bold;
+  }
+  .comment-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .comment-container .liveCommentForm__submit button {
+    width: 50%;
+    float: right;
+  }
+  .commentList {
+    width: 72%;
+  }
+  .commentList .showComments .userIconGreyWrapper img {
+    width: 70px;
+  }
+  .commentList .showComments .showCommentsWrapper__Ex {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .commentList .showComments .showCommentsWrapper__Ex time {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment {
+    width: 75%;
+  }
+  .comment .comment-container {
+    width: 50%;
+  }
+  .commentList {
+    width: 38%;
+  }
 }
 
 footer {
