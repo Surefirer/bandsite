@@ -1,0 +1,130 @@
+.article-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    &__title {
+        padding-top: 2rem;
+        h2 {
+            font-size: 1.5rem;
+            font-family: $font-bold;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+            // height: 362px;
+            padding: 1.5rem 0;
+        }
+    }
+    &__text {
+        padding-bottom: 2rem;
+        font-family: $font-demiBold;
+    }
+    &__sign {
+        padding-bottom: 2.5rem;
+        font-weight: bold;
+        font-size: 0.8125rem;
+    }
+    &__subtitle {
+        font-size: 0.875rem;
+        font-family: $font-demiBold;
+    }
+    &__text1 {
+        font-size: 0.8125rem;
+        padding: 1.5rem 0;
+    }
+    &__text2 {
+        font-size: 0.8125rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .article-container {
+        width: 93%;
+        &__title {
+            h2 {
+                font-size: 2.25rem;
+                font-family: $font-bold;
+            }
+        }
+        &__text {
+            p {
+                font-size: 1.5rem;
+                font-family: $font-bold;
+            }
+        }
+        &__sign {
+            font-size: 1rem;
+        }
+        &__subtitle {
+            font-size: 1.5rem;
+            font-family: $font-bold;
+        }
+        &__text1 {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-right: 1.5rem;
+        }
+        &__text2 {
+            font-size: 0.875rem;
+            padding: 1.5rem 0;
+            line-height: 1.375rem;
+        }
+    }
+    .article-container2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+// ====== DESKTOP VERSION ======
+@include desktop {
+    .article-container {
+        width: 75%;
+        &__title {
+            padding-top: 3rem;
+            h2 {
+                font-size: 2.25rem;
+                font-family: $font-bold;
+            }
+        }
+        &__img {
+            img {
+                height: 34.375rem;
+                padding: 3rem 0;
+            }
+        }
+        &__text {
+            p {
+                // font-size: 24px;
+                font-size: 1.5rem;
+                font-family: $font-bold;
+                line-height: 2rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+        &__sign {
+            padding-bottom: 3.5rem;
+        }
+        &__text1 {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-right: 2.5rem;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        &__text2 {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        .article-box {
+            width: 81%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

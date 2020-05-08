@@ -1,0 +1,80 @@
+.sp-hero {
+    height: 80.4vh; // required height is 472px
+    background: linear-gradient(rgba(50, 50, 50, 0.5)), url(../../assets/images/showPageImg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    &__text {
+        color: $secondary-color;
+        font-family: $font-bold;
+        width: 333px;
+        height: 200px;
+        padding-left: 1rem;
+        font-size: 24px;
+        line-height: 44px; // in the Typography doc, 24px font-size line-height is 32px, however, use 32px here is visually incorrect.
+    }
+    &__text--title {
+        font-family: $font-regular;
+        padding-top: 64px;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+.musicPlayer {
+    width: 80%;
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    margin: 64px 0;
+}
+
+// ====== TABLET VERSION ======
+@include tablet {
+    .sp-hero {
+        height: 114vh;
+        &__text {
+            width: 600px;
+            font-size: 2.5rem;
+            font-family: $font-bold;
+            line-height: 90px;
+            padding-left: 24px;
+        }
+        &__text--title {
+            font-family: $font-bold;
+            padding-top: 96px;
+            font-size: 1.5rem;
+        }
+    }
+    .musicPlayer {
+        width: 55%;
+        position: absolute;
+        bottom: -5px;
+        left: 24px;
+    }
+}
+
+// ====== DESKTOP VERSION ======
+@include desktop {
+    .sp-hero {
+        display: flex;
+        height: 114vh;
+        &__text--title {
+            padding-top: 160px;
+        }
+        &__text {
+            width: 780px;
+            padding-left: 11.25rem;
+        }
+        .musicPlayer {
+            width: 436px;
+            height: 146px;
+            position: relative;
+            margin-top: 330px;
+            margin-left: 64px;
+            iframe {
+                height: 146px;
+            }
+        }
+    }
+}
