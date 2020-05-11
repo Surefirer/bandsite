@@ -79,7 +79,7 @@ showTicketWrapper.appendChild(tbltTitleContainer);
 
 function constructShows(shows) {
 
-    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=123456")
+    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=weizhenliang")
 
     .then((response) => {
         response.data.forEach((show, index) => {

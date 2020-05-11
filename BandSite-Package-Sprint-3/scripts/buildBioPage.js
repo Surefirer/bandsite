@@ -37,11 +37,11 @@ const customers = [{
 function constructComments(customers) {
     container.innerHTML = "";
 
-    axios.get("https://project-1-api.herokuapp.com/comments?api_key=123456")
+    axios.get("https://project-1-api.herokuapp.com/comments?api_key=weizhenliang")
 
     .then((response) => {
-
-        response.data.forEach((customer, index) => {
+        const sorted = dateSortArray(response.data);
+        sorted.forEach((customer, index) => {
             //for (customer of customers) {
             const showComments = document.createElement("div");
             showComments.classList.add("showComments");
@@ -110,12 +110,10 @@ function handleFormSubmit(event) {
 
         axios({
                 method: "post",
-                url: "https://project-1-api.herokuapp.com/comments?api_key=123456",
+                url: "https://project-1-api.herokuapp.com/comments?api_key=weizhenliang",
                 data: {
                     name: userNameVal,
                     comment: userCommentsVal,
-                    likes: 0,
-                    timestamp: new Date(),
                 },
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8",
@@ -123,22 +121,22 @@ function handleFormSubmit(event) {
             })
             .then((response) => {
                 console.log(response);
+                //constructComments(dateSortArray(response.data));
+                constructComments();
             });
 
         liveCommentForm.reset();
-        //constructComments(dateSortArray(response.data));
+        //constructComments(dateSortArray(response.data.timestamp));
     } else {
         alert("Please add a name and comment");
     }
-
-
-    constructComments(dateSortArray(customers));
+    //constructComments(dateSortArray(response.data));
 }
 
 /* --------------------------------------------
  *  Sort array by date
  *-----------------------------------------------*/
 function dateSortArray(arr) {
-    const sortedArray = arr.slice().sort((a, b) => b.date - a.date);
+    const sortedArray = arr.sort((a, b) => b.timestamp - a.timestamp);
     return sortedArray;
 }
